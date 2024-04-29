@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    border-right: 0.1em solid #2F3B43;
 }
 
 .navbar li {
@@ -34,11 +34,18 @@ body {
     margin-bottom: 1em;
 }
 
-hr{
+.linea_navbar{
     width: 40%;
     margin: auto;
     border: none;
     border-top: 0.15em solid #4D565C;;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .perfil img {
@@ -132,6 +139,71 @@ hr{
 .chats_opciones div:nth-child(2) {
     margin-left: 0.5em;
     margin-right: 0.5em;
+}
+
+.chats_mensajes_destacado{
+    display: flex;
+    flex-direction: column;
+    background-color: #2A3942;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+
+.chats_mensajes{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+}
+
+.chats_mensajes:hover{
+    background-color: #202C33;
+}
+
+.chat{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.chat_info{
+    width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.chat_nombre_hora{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hora{
+    font-size: 0.8em;
+    align-self: flex-end;
+    color: #869697;
+}
+
+.chat_mensaje_flecha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.chat_mensaje_flecha div:first-child{
+    font-size: 0.7em;
+    align-self: flex-end;
+}
+
+.linea_chat{
+    border: none;
+    border-bottom: 0.1em solid #202C33;
+    width: 82%;
+    margin-left: 16%;
+    margin-right: 3%;
+    margin-top: -0.1em;
 }
 
 .mensajes {
