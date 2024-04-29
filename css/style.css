@@ -1,5 +1,139 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    
+    box-sizing: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 2.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    height: 100vh;
+}
+
+.navbar {
+    grid-area: 1 / 0 / 2 / 3;
+    background-color: #202C33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.navbar li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #AEBAC1;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+hr{
+    width: 40%;
+    margin: auto;
+    border: none;
+    border-top: 0.15em solid #4D565C;;
+}
+
+.perfil img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chats {
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #111B21;
+}
+
+.chats_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 2em 1em 2em;
+    color: white;
+}
+
+.chats_header div {
+    color: #AEBAC1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 5em;
+}
+
+.chats_buscador {
+    background-color: #202C33;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3em;
+}
+
+.chats_buscador input {
+    border: 0;
+    background-color: transparent;
+    width: 85%;
+    color: white;
+}
+
+.chats_buscador input:focus {
+    border: none;
+    outline: none;
+}
+
+.chats_buscador input::placeholder {
+    color: #8696A0
+}
+
+.chats_buscador div {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chats_buscador div svg {
+    color: #AEBAC1;
+}
+
+.chats_opciones {
+    display: flex;
+    flex-direction: row;
+    padding: 0.8em 1em 1em 1em;
+}
+
+.chats_opciones div {
+    background-color: #202C33;
+    padding: 0.6em;
+    border-radius: 1.3em;
+    color: #8696A0;
+    font-size: 0.8em;
+}
+
+.chats_opciones div:hover {
+    background-color: #26353D;
+}
+
+.chats_opciones div:first-child {
+    background-color: #0A332C;
+    color: #00A884;
+}
+
+.chats_opciones div:nth-child(2) {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.mensajes {
+    grid-area: 1 / 3 / 2 / 4;
 }
