@@ -30,8 +30,8 @@ body {
     justify-content: center;
     align-items: center;
     color: #AEBAC1;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 .linea_navbar{
@@ -180,6 +180,10 @@ body {
     justify-content: space-between;
 }
 
+.nombre{
+    font-weight: 300;
+}
+
 .hora{
     font-size: 0.8em;
     align-self: flex-end;
@@ -192,8 +196,13 @@ body {
     justify-content: space-between;
 }
 
-.chat_mensaje_flecha div:first-child{
-    font-size: 0.7em;
+.mensaje_chat{
+    color: #8696A0;
+    width: 35em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8em;
     align-self: flex-end;
 }
 
